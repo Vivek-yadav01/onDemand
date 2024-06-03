@@ -15,7 +15,7 @@ document.querySelector("#upload-form").addEventListener("submit", async function
   data.append("signature", signatureResponse.data.signature)
   data.append("timestamp", signatureResponse.data.timestamp)
 
-  const cloudinaryResponse = await axios.post(`https://api.cloudinary.com/v1_1/${cloud_name}/auto/upload`, data, {
+  const cloudinaryResponse = await axios.post(`https://api.cloudinary.com/v1_1/dyybvvvbs/auto/upload`, data, {
     headers: { "Content-Type": "multipart/form-data" },
     onUploadProgress: function (e) {
       console.log(e.loaded / e.total)

@@ -120,4 +120,6 @@ app.post("/delete-photo", async (req, res) => {
   res.redirect("/view-photos")
 })
 
-app.listen(3000)
+app.listen(3000,()=>{
+  console.log("Server is running on port 3000")
+})
